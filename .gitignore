@@ -1,0 +1,7 @@
+node_modules
+/node_modules
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
