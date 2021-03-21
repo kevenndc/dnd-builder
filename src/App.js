@@ -10,13 +10,13 @@ function App() {
       <div className="drop-zones">
         <Dropzone>
           <Draggable id="item-1">
-            <h3>Item 1</h3>
+            <h3 contenteditable="true">Item 1</h3>
           </Draggable>
         </Dropzone>
 
         <Dropzone>
           <Draggable id="item-2">
-            <h3>Item 3</h3>
+            <h3 contenteditable="true">Item 3</h3>
           </Draggable>
         </Dropzone>
       </div>
