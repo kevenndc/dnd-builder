@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Dropzone from './components/DropZone';
 import Draggable from './components/Draggable';
