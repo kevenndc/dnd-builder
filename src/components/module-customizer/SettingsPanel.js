@@ -1,13 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class SettingsPanel extends Component {
-  render() {
-    return (
-      <div className="dnd__setting-panel">
-      
-      </div>
-    )
-  }
+export default function SettingsPanel() {
+  return (
+    <div className="dnd__setting-panel">
+    
+    </div>
+  )
 }
-
-export default SettingsPanel;
