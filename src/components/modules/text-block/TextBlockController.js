@@ -1,7 +1,7 @@
 import React from 'react';
 import _uniqueId from 'lodash/uniqueId';
 import TextBlock from './TextBlock';
-import ModuleWrapper from './ModuleWrapper';
+import ModuleWrapper from '../builder-components/ModuleWrapper';
 
 export default function TextBlockController(props) {
   const id = _uniqueId('dnd-');

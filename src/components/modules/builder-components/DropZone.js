@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class DropZone extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+export default function DropZone(props) {
   /**
    * Handles the ondrop event by appending the dragged elemento to the drop zone
    * @param {Event} e 
    */
-  drop(e) {
-    //console.log(typeof e);
+  const drop = e => {
     e.preventDefault();
 
-    // get the 
+    // get the id of the module tha will be appended in this drop zone
     const moduleId = e.dataTransfer.getData('module_id');
     console.log(moduleId);
     const $module = document.getElementById(moduleId);
@@ -23,22 +18,18 @@ class DropZone extends Component {
     $module.style.display = 'block';
   }
 
-  dragOver(e) {
+  const dragOver = e => {
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
   }
 
-  render() {
-    return (
-      <div
-        className="drop-zone"
-        onDrop={this.drop} 
-        onDragOver={this.dragOver} 
-      >
-        {this.props.children}
-      </div>
-    )
-  }
+  return (
+    <div
+      className="drop-zone"
+      onDrop={drop} 
+      onDragOver={dragOver} 
+    >
+      {props.children}
+    </div>
+  )
 }
-
-export default DropZone;

@@ -1,8 +1,9 @@
 import './App.css';
-import Dropzone from './components/DropZone';
+import Dropzone from './components/modules/builder-components/DropZone';
 import Draggable from './components/Draggable';
 
-import TextBlockController from './components/modules/TextBlockController';
+import TextBlockController from './components/modules/text-block/TextBlockController';
+import SectionController from './components/modules/section/SectionController';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <TextBlockController
         isBuilderMode={true} 
       />
+      <SectionController isBuilderMode={true} />
+      <SectionController isBuilderMode={true} />
     </div>
   );
 }

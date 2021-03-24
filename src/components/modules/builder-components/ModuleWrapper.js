@@ -4,7 +4,7 @@ export default function ModuleWrapper(props) {
   const [isMouseOver, setMouseOver] = useState(false);
   const [isDragging, setDragging] = useState(false);
 
-  const getModuleId = () => props.moduleId;
+  const getModuleId = () => props.id;
 
   /**
    * Handles the dragstart event
