@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
-class Text extends Component {
+class TextBlock extends React.Component {
   constructor(props) {
     super(props);
-    this.selector = 'teste';
   }
-
   render() {
     return (
-      <h1></h1>
+    <div className="dnd__module" id={this.props.id}>
+      <p>This is an example text</p>
+    </div>
     )
   }
 }
+
+export default TextBlock;

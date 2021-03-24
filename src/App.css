@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+.App {
+  padding: 100px;
+}
+
 .drop-zones {
   display: flex;
   justify-content: space-between;
@@ -42,4 +46,38 @@ h1 {
 
   color: #000;
   background-color: #f7f7f7;
+}
+
+.dnd__module-wrapper {
+  position: relative;
+  border: 2px solid transparent;
+  margin: -2px;
+}
+
+.dnd__module-wrapper:hover {
+  border-color: #00ff00
+}
+
+.dnd__module-wrapper--options {
+  color: #fff;
+  display: inline-flex;
+  background-color: #00ff00;
+  position: absolute;
+  bottom: 100%;
+  left: -2px;
+}
+
+.dnd__module {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dnd__module-wrapper--options > span {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 7px;
+}
+
+.d-none {
+  display: none;
 }
