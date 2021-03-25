@@ -4,7 +4,7 @@ import Section from './Section';
 import ModuleWrapper from '../builder-components/ModuleWrapper';
 import DropZone from '../builder-components/DropZone'
 
-export default function TextBlockController(props) {
+export default function SectionController(props) {
   const id = _uniqueId('dnd-');
 
   if (props.isBuilderMode) {

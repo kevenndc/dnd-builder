@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function DropZone(props) {
+  const [isDragOver, setDragOver] = useState(false);
+
   /**
    * Handles the ondrop event by appending the dragged elemento to the drop zone
    * @param {Event} e 
@@ -25,8 +27,10 @@ export default function DropZone(props) {
 
   return (
     <div
-      className="drop-zone"
+      className={`drop-zone ${isDragOver ? 'dropzone--isover' : ''}`}
       onDrop={drop} 
+      onDragEnter={() => setDragOver(true)}
+      onDragLeave={() => setDragOver(false)}
       onDragOver={dragOver} 
     >
       {props.children}

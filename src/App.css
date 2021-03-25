@@ -26,25 +26,16 @@ h1 {
   margin: 0 auto;
 }
 
- .drop-zone {
+.drop-zone {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  
 
   background-color: #ccc;
 }
 
-.drop-zones .drop-zone .draggable-item {
-  display: block;
-
-  cursor: pointer;
-
-  padding: 20px;
-  margin: 5px;
-
-  color: #000;
-  background-color: #f7f7f7;
+.drop-zone.dropzone--isover {
+  background-color: #bbb;
 }
 
 .dnd__module-wrapper {
@@ -79,4 +70,9 @@ h1 {
 
 .d-none {
   display: none;
+}
+
+.dnd__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
