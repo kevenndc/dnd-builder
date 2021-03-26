@@ -12,7 +12,6 @@ export default function DropZone(props) {
 
     // get the id of the module tha will be appended in this drop zone
     const moduleId = e.dataTransfer.getData('module_id');
-    console.log(moduleId);
     const $module = document.getElementById(moduleId);
 
     e.target.appendChild($module);
